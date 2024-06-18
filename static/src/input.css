@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    a{
+        @apply dark:text-slate-300 text-slate-700 hover:text-teal-300;
+    }
+}
