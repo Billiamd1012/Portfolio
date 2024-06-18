@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Darker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="{{url_for('static',filename='src/global.css')}}" rel="stylesheet"> <!-- Global styles first -->
-    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Darker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="{{ url_for('static', filename='src/global.css') }}" rel="stylesheet"> <!-- Global styles first -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/output.css') }}">
 </head>
 <body class="bg-white dark:bg-slate-900">
   <!-- Visible content -->
@@ -39,7 +39,7 @@
       <!-- About section -->
       <section id="about">
         <h3 class="text-slate-700 dark:text-slate-300 font-bold tracking-wider">ABOUT</h3>
-        <p class="text-slate-600 dark:text-slate-400 mt-2">
+        <p class="text-slate-600 dark:text-slate-400 mt-2 mb-10">
           I fell in love with game development back in 2017, and I have been jumping between every hardware and software project I could imagine since then. 
           From building a 3D printer to adding two numbers together in Rust and tackling every other programming puzzle I could get my hands on in between, 
           I have had no shortage of interesting challenges. Fast forward a few years, and I have had the privilege of engineering solutions for an 
@@ -47,11 +47,20 @@
           and a <a class="dark:text-slate-300 text-slate-700 hover:text-teal-300" target="_blank" href="https://hoftclothing.com/">group of young entrepreneurs</a>.  
           <br><br>
           At the moment, I am looking to expand my horizons to as many fields of Information Technology and Computer Science as I can before I find the next step in my Software Engineering career.
-          Currently I am designing operating systems at the <a>University of South Australia</a>, figuring out how machines learn on Brilliant, exploring data through Google's Data Analytics certificate, and tackling programming problems on LeetCode. 
+          Currently I am designing operating systems at the <a class="dark:text-slate-300 text-slate-700 hover:text-teal-300" href="https://study.unisa.edu.au/degrees/bachelor-of-information-technology-software-development">University of South Australia</a>, 
+          playing with sorting alogorithims on <a class="dark:text-slate-300 text-slate-700 hover:text-teal-300" href="https://brilliant.org/s/cs/">Brilliant</a>, 
+          exploring data through <a class="dark:text-slate-300 text-slate-700 hover:text-teal-300" href="https://www.coursera.org/professional-certificates/google-data-analytics">Google's Data Analytics certificate</a>, 
+          and tackling programming problems on <a class="dark:text-slate-300 text-slate-700 hover:text-teal-300" href="https://leetcode.com/">LeetCode</a> 
           <br><br>
           When I am not at the computer, you might find me on a rock wall, in a gym chucking balls through or over nets, or hanging out with my family, partner, or two cats. 
-          Or coaching a group of talented young rowers at the Pulteney Boat Club on the Torrens River or watching them race along West Lakes.
+          Or coaching a group of talented young rowers at the <a class="dark:text-slate-300 text-slate-700 hover:text-teal-300" href="https://www.pulteney.sa.edu.au/">Pulteney Boat Club</a> on the Torrens River or watching them race along West Lakes.
         </p>
+      </section>
+      <section id="experience">
+        <h3 class="text-slate-700 dark:text-slate-300 font-bold tracking-wider mt-5">EXPERIENCE</h3>
+        <ol>
+
+        </ol>
       </section>
     </main>
   </div>

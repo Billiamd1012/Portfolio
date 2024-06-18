@@ -570,6 +570,10 @@ video {
   position: static;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -592,6 +596,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -631,6 +639,10 @@ video {
   padding: 1.5rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -657,23 +669,6 @@ video {
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
-}
-
-a {
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
-}
-
-a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(94 234 212 / var(--tw-text-opacity));
-}
-
-@media (prefers-color-scheme: dark) {
-  a {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
-  }
 }
 
 .hover\:text-slate-200:hover {
