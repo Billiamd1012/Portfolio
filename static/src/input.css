@@ -11,19 +11,19 @@
 
 @layer utilities {
     /* Reduce opacity for all list items within the group when any item is hovered */
-    .group/list:hover .group {
+    .group\/list:hover .group {
         opacity: 0.5;
     }
     /* Ensure the hovered list item retains full opacity */
-    .group/list:hover .group:hover {
+    .group\/list:hover .group:hover {
         opacity: 1 !important;
     }
     /* Remove the background effect from non-hovered items */
-    .group/list:hover .group .absolute {
+    .group\/list:hover .group .absolute {
         display: none;
     }
     /* Ensure the background effect is applied to the hovered item */
-    .group/list:hover .group:hover .absolute {
+    .group\/list:hover .group:hover .absolute {
         display: block;
     }
 }

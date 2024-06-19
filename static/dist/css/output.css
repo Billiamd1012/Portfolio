@@ -866,12 +866,28 @@ p a:hover {
   transition-duration: 150ms;
 }
 
-.group:hover .group {
+/* Reduce opacity for all list items within the group when any item is hovered */
+
+.group\/list:hover .group {
   opacity: 0.5;
 }
 
-.group:hover .group:hover {
+/* Ensure the hovered list item retains full opacity */
+
+.group\/list:hover .group:hover {
   opacity: 1 !important;
+}
+
+/* Remove the background effect from non-hovered items */
+
+.group\/list:hover .group .absolute {
+  display: none;
+}
+
+/* Ensure the background effect is applied to the hovered item */
+
+.group\/list:hover .group:hover .absolute {
+  display: block;
 }
 
 .hover\:text-slate-200:hover {
@@ -1009,3 +1025,4 @@ p a:hover {
     color: rgb(148 163 184 / var(--tw-text-opacity));
   }
 }
+  
