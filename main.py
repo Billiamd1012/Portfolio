@@ -17,4 +17,4 @@ def serve_pdf():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='60.241.159.177', port=80)  # Bind to all network interfaces on port 80
