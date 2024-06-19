@@ -447,7 +447,6 @@ video {
 }
 
 p a {
-  padding-top: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -658,6 +657,10 @@ p a:hover {
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-2 {

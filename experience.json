@@ -1,0 +1,84 @@
+{
+    "experiences": [
+      {
+        "date_range": "November 2022 — Current",
+        "job_title": "Junior Rowing Coordinator",
+        "company": {
+          "name": "Pulteney Grammar School",
+          "url": "#"
+        },
+        "description": "Stepping up into a junior coordinator role, I had more oversight over the junior program enabling me to better tailor the training program to younger athletes. I also stepped into a manager role as I helped to develop the coaches around me to better communicate with their athletes.",
+        "technologies": []
+      },
+      {
+        "date_range": "September 2022 — Ongoing",
+        "job_title": "Information Technology Student",
+        "company": {
+          "name": "University of South Australia",
+          "url": "#"
+        },
+        "technologies": [
+          "SQL",
+          "Python",
+          "Java",
+          "Git",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "date_range": "2022 — 2024",
+        "job_title": "Web Developer",
+        "company": {
+          "name": "Gym and Fitness",
+          "url": "#"
+        },
+        "description": "Through my employment here I worked on a variety of projects. Initially I was employed as a web developer, making changes to multiple Shopify stores to improve both functionality and aesthetics with the help of an Asana task board. This role then expanded into backend application building, namely a shipping calculator that interacted with the Shopify API to provide shipping rates. I also gained experience scripting in Ruby and React JS through Shopify scripts and maintained the Force USA app respectively.",
+        "technologies": [
+          "Shopify",
+          "Ruby",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Liquid",
+          "Python",
+          "SpreadSheets",
+          "Google App Script",
+          "Git"
+        ]
+      },
+      {
+        "date_range": "June 2024",
+        "job_title": "Google Data Analytics Professional Certificate",
+        "company": {
+          "name": "Google",
+          "url": "#"
+        },
+        "description": "Received Google Data Analytics Professional Certificate.",
+        "technologies": [
+          "Tableau",
+          "R",
+          "SQL",
+          "SpreadSheets"
+        ]
+      },
+      {
+        "date_range": "July 2019 — June 2020",
+        "job_title": "Certificate III in Information Technology (Game Development)",
+        "company": {
+          "name": "Academy of Interactive Entertainment",
+          "url": "#"
+        },
+        "description": "While studying a Certificate III in Information Technology I worked mostly with C# to develop games in Unity as well as basic HTML and CSS to create applications and distribute links to these projects online.",
+        "technologies": [
+            "C#",
+            "Unity",
+            "Git",
+            "HTML",
+            "CSS"
+        ]
+      }
+    ]
+  }
+  

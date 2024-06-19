@@ -4,7 +4,7 @@
 
 @layer base{
     p a{
-        @apply pt-10 dark:text-slate-300 text-slate-700 hover:text-teal-300;
+        @apply dark:text-slate-300 text-slate-700 hover:text-teal-300;
     }
 }
 
