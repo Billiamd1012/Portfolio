@@ -1,14 +1,20 @@
-from flask import Flask, render_template, send_from_directory
+import os
 import json
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    with open('experience.json') as f:
-        experiences = json.load(f)
-    return render_template('index.html', experiences=experiences['experiences'])
-
+    try:
+        # Get the absolute path to the experience.json file
+        file_path = os.path.join(os.path.dirname(__file__), 'experience.json')
+        with open(file_path) as f:
+            experiences = json.load(f)
+        return render_template('index.html', experiences=experiences['experiences'])
+    except Exception as e:
+        app.logger.error(f"Error loading experiences: {e}")
+        return "Internal Server Error", 500
 
 # Route to serve the resume PDF
 @app.route('/resume.pdf')
@@ -17,4 +23,4 @@ def serve_pdf():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)  # Bind to all network interfaces on port 80
+    app.run() 
