@@ -1201,6 +1201,11 @@ p a:hover {
     padding-bottom: 0px;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:hover\:\!opacity-100:hover {
     opacity: 1 !important;
   }
