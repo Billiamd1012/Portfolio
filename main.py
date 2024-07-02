@@ -8,10 +8,27 @@ app = Flask(__name__)
 def home():
     try:
         # Get the absolute path to the experience.json file
-        file_path = os.path.join(os.path.dirname(__file__), 'experience.json')
+        file_path = os.path.join(os.path.dirname(__file__), 'templates/experience.json')
         with open(file_path) as f:
             experiences = json.load(f)
-        return render_template('index.html', experiences=experiences['experiences'])
+        # Get the absolute path to the project.json file
+        file_path = os.path.join(os.path.dirname(__file__), 'templates/projects.json')
+        with open(file_path) as f:
+            projects = json.load(f)
+        return render_template('index.html', experiences=experiences['experiences'], projects=projects['projects'])
+    except Exception as e:
+        app.logger.error(f"Error loading experiences: {e}")
+        return "Internal Server Error", 500
+    
+# Route to show project archive
+@app.route('/projects')
+def projects():
+    try:
+        # Get the absolute path to the project.json file
+        file_path = os.path.join(os.path.dirname(__file__), 'templates/projects.json')
+        with open(file_path) as f:
+            projects = json.load(f)
+        return render_template('projects.html', projects=projects['projects'])
     except Exception as e:
         app.logger.error(f"Error loading experiences: {e}")
         return "Internal Server Error", 500

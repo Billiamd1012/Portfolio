@@ -1,0 +1,14 @@
+{
+  "showcase":[
+    
+  ],
+  "projects": [
+    {
+      "year": 2021,
+      "project": "Australian Store",
+      "made": "Gym and Fitness",
+      "tech": ["Liquid", "CSS", "HTML", "Shopify"],
+      "link": "www.gymandfitness.com.au"
+    }
+  ]
+}
