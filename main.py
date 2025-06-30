@@ -21,6 +21,6 @@ def home():
 def serve_pdf():
     return send_from_directory('static/dist/pdf', 'resume.pdf')
 
-
+# For development only
 if __name__ == '__main__':
-    app.run() 
+    app.run(debug=True, host='0.0.0.0', port=5000) 
