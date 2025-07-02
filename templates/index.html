@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bill Darker</title>
+  <link rel="icon" href="{{ url_for('static', filename='dist/icons/favicon.ico') }}" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="{{ url_for('static', filename='src/global.css') }}" rel="stylesheet"> <!-- Global styles first -->
   <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/output.css') }}">
+
 </head>
 <body class="bg-white dark:bg-slate-900">
   <!-- Visible content -->
@@ -94,7 +96,7 @@
 
       <!-- Footer -->
       <footer>
-        <p class="text-slate-600 dark:text-slate-400 mt-20">Inspired by <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>, coded in <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> by me, myself and <a href="https://chatgpt.com/" target="_blank">Chat GPT</a>. Built with <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a> and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, hosted on a Mac Mini from 2012 running Debian</a>.
+        <p class="text-slate-600 dark:text-slate-400 mt-20">Inspired by <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a>, coded in <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> by me, myself and <a href="https://ollama.com/" target="_blank">Ollama</a> with <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank">Flask</a> and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, hosted on a Mac Mini from 2012 running <a href="https://www.debian.org/" target="_blank">Debian</a> and tunnelled past the pesky restrictions from my ISP using <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/" target="_blank">CloudFlare</a>.
       </footer>
     </main>
   </div>

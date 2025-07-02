@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     try:
         # Get the absolute path to the experience.json file
-        file_path = os.path.join(os.path.dirname(__file__), 'experience.json')
+        file_path = os.path.join(os.path.dirname(__file__), 'static\dist\json\experience.json')
         with open(file_path) as f:
             experiences = json.load(f)
         return render_template('index.html', experiences=experiences['experiences'])

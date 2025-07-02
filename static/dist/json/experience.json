@@ -1,21 +1,24 @@
 {
     "experiences": [
       {
-        "date_range": "November 2022 — Current",
+        "date_range": "November 2022 - Current",
         "job_title": "Junior Rowing Coordinator",
         "company": {
           "name": "Pulteney Grammar School",
-          "url": "#"
+          "url": "https://www.pulteney.sa.edu.au/school-sport/"
         },
         "description": "Stepping up into a junior coordinator role, I had more oversight over the junior program enabling me to better tailor the training program to younger athletes. I also stepped into a manager role as I helped to develop the coaches around me to better communicate with their athletes.",
-        "technologies": []
+        "technologies": [
+          "Leadership",
+          "Communication"
+        ]
       },
       {
-        "date_range": "September 2022 — December 2025",
+        "date_range": "September 2022 - December 2025",
         "job_title": "Information Technology Student",
         "company": {
           "name": "University of South Australia",
-          "url": "#"
+          "url": "https://study.unisa.edu.au/degrees/bachelor-of-information-technology"
         },
         "description": "While studying a bachelor’s degree in information technology, I have learned the basics of networks and database management. Throughout my network fundamentals course, I worked with Cisco technology to set up a range of networks from scratch using a command line interface to configure network devices. I performed similar practicals during the data-driven web technologies course where I designed databases using UML class diagrams and then implemented these designs using SQL. I also extended my programming knowledge by learning the theory behind object-oriented programming and expanding on this knowledge as I built applications alone and within group environments in languages such as Python and Java.",
         "technologies": [
@@ -25,15 +28,19 @@
           "Git",
           "HTML",
           "CSS",
-          "JavaScript"
+          "JavaScript",
+          "C#",
+          "C++",
+          "Agile",
+          "Networking"
         ]
       },
       {
-        "date_range": "2022 — 2024",
+        "date_range": "2022 - 2024",
         "job_title": "Web Developer",
         "company": {
           "name": "Gym and Fitness",
-          "url": "#"
+          "url": "https://www.gymandfitness.com.au/"
         },
         "description": "Through my employment here I worked on a variety of projects. Initially I was employed as a web developer, making changes to multiple Shopify stores to improve both functionality and aesthetics with the help of an Asana task board. This role then expanded into backend application building, namely a shipping calculator that interacted with the Shopify API to provide shipping rates. I also gained experience scripting in Ruby and React JS through Shopify scripts and maintained the Force USA app respectively.",
         "technologies": [
@@ -54,9 +61,9 @@
         "job_title": "Google Data Analytics Professional Certificate",
         "company": {
           "name": "Google",
-          "url": "#"
+          "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
         },
-        "description": "Received Google Data Analytics Professional Certificate.",
+        "description": "Learnt all about the collection, transformation and creation of visualisation for structured and unstrcutured data.",
         "technologies": [
           "Tableau",
           "R",
@@ -65,11 +72,11 @@
         ]
       },
       {
-        "date_range": "July 2019 — June 2020",
+        "date_range": "July 2019 - June 2020",
         "job_title": "Certificate III in Information Technology (Game Development)",
         "company": {
           "name": "Academy of Interactive Entertainment",
-          "url": "#"
+          "url": "https://aie.edu.au/course/game-development-foundations/"
         },
         "description": "While studying a Certificate III in Information Technology I worked mostly with C# to develop games in Unity as well as basic HTML and CSS to create applications and distribute links to these projects online.",
         "technologies": [
