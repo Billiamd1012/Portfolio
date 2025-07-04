@@ -12,7 +12,26 @@
 </head>
 <body class="bg-white dark:bg-slate-900">
   <div class="flex items-center justify-center min-h-screen">
-    <h1 class="text-slate-700 dark:text-slate-300 text-4xl font-bold">Login</h1>
+    <div class="relative flex items-center justify-center w-80 h-80">
+      <!-- Animated orbit wrapper -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none animate-orbit-slow">
+        <div class="relative w-full h-full">
+          <a href="/login/github" class="absolute left-1/2 top-0 transform -translate-x-1/2 bg-white dark:bg-slate-800 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition z-20 pointer-events-auto">
+            <img src="{{ url_for('static', filename='dist/icons/github/github.svg') }}" alt="GitHub" class="w-8 h-8">
+          </a>
+          <a href="/login/google" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-slate-800 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition z-20 pointer-events-auto">
+            <img src="{{ url_for('static', filename='dist/icons/google/google.svg') }}" alt="Google" class="w-8 h-8">
+          </a>
+          <a href="/login/linkedin" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white dark:bg-slate-800 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:scale-110 transition z-20 pointer-events-auto">
+            <img src="{{ url_for('static', filename='dist/icons/linkedin/linkedin-color.svg') }}" alt="LinkedIn" class="w-8 h-8">
+          </a>
+        </div>
+      </div>
+      <!-- Central Lock Icon -->
+      <svg class="w-16 h-16 z-10 text-slate-700 dark:text-slate-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Locked">
+        <path d="M7.10102 10H7V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10H16.899M12 14V16M19 15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15C5 11.134 8.13401 8 12 8C15.866 8 19 11.134 19 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
   </div>
 </body>
 </html>
