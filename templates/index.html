@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bill Darker</title>
-  <link rel="icon" href="{{ url_for('static', filename='dist/icons/favicon.ico') }}" type="image/x-icon">
+  <link rel="icon" href="{{ url_for('static', filename='dist/icons/site/favicon.ico') }}" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="{{ url_for('static', filename='src/global.css') }}" rel="stylesheet"> <!-- Global styles first -->
   <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/output.css') }}">
@@ -13,26 +13,35 @@
 </head>
 <body class="bg-white dark:bg-slate-900">
   <!-- Visible content -->
+  <div class="absolute top-0 right-0 m-4">
+    <a href="/login" class="text-slate-600 dark:text-slate-400 hover:text-slate-200 font-bold py-2 px-4 rounded">
+      Login
+    </a>
+  </div>
   <div class="lg:flex lg:h-screen">
     <!-- Name, summary, and social links - Left side-->
-    <header class="lg:w-1/2 lg:h-screen p-6 md:px-12 md:py-20 overflow-y-auto flex-shrink-0">
+    <header class="lg:w-1/2 lg:h-screen p-6 md:px-12 md:py-10 overflow-y-auto flex-shrink-0">
       <div class="lg:sticky lg:top-0">
         <h1 class="text-slate-700 dark:text-slate-300 text-6xl font-bold">Bill Darker</h1>
         <h2 class="text-slate-700 dark:text-slate-300 text-2xl font-bold mt-3">Aspiring Software Engineer</h2>
-        <p class="text-slate-600 dark:text-slate-400 mt-4 max-w-xs">Engineering precise, efficient, and user-centric solutions.</p>
+        <p class="text-slate-600 dark:text-slate-400 mt-4">Engineering precise, efficient, and user-centric solutions.</p>
         <!-- Social buttons -->
-        <ul class="mt-6 flex items-center ml-2">
-          <li class="text-slate-600 dark:text-slate-400 mr-5">
-            <a class="hover:text-slate-200" href="https://github.com/Billiamd1012" target="_blank">
-              <span class="sr-only">Github</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
-            </a>
-          </li>
-          <li class="text-slate-600 dark:text-slate-400 mr-5">
-            <a class="hover:text-slate-200" href="https://www.linkedin.com/in/william-darker-3a0724192/" target="_blank">
-              <span class="sr-only">LinkedIn</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg>          </a>
-          </li>
+        <ul class="mt-6 flex items-center ml-2 justify-between w-full">
+          <div class="flex">
+            <li class="text-slate-600 dark:text-slate-400 mr-5">
+              <a class="hover:text-slate-200" href="https://github.com/Billiamd1012" target="_blank">
+                <span class="sr-only">Github</span>
+                <svg height="24" width="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" aria-hidden="true"><g><path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/></g></svg>
+              </a>
+            </li>
+            <li class="text-slate-600 dark:text-slate-400 mr-5">
+              <a class="hover:text-slate-200" href="https://www.linkedin.com/in/william-darker-3a0724192/" target="_blank">
+                <span class="sr-only">LinkedIn</span>
+                <svg height="24" width="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" aria-hidden="true"><path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"/></svg>
+              </a>
+            </li>
+          </div>
+
         </ul>
       </div>
     </header>

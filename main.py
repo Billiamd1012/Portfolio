@@ -16,6 +16,9 @@ def home():
         app.logger.error(f"Error loading experiences: {e}")
         return "Internal Server Error", 500
 
+@app.route('/login')
+def login():
+    return render_template('login.html')
 # Route to serve the resume PDF
 @app.route('/resume.pdf')
 def serve_pdf():
